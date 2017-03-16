@@ -130,6 +130,10 @@ unsigned __stdcall WorkingThread(void * index)
 		}
 	}
 
+	free(ReadRequest);
+	free(ToMstcpRequest);
+	free(ToAdapterRequest);
+
 	return 0;
 }
 
